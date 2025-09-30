@@ -35,7 +35,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\DiegoPython\Prueba técnica – Desarrolladora Python\venv"
+VIRTUAL_ENV="C:\PYTHON\Prueba técnica – Desarrolladora Python\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

@@ -10,8 +10,10 @@ def cargar_y_limpiar_datos(filepath='ventas.csv'):
         return None
 
     df.dropna(inplace=True)
-    df = df[df['Cantidad'] > 0]
+    df = df[df['cantidad'] > 0]
     df['total'] = df['cantidad'] * df['precio_unitario']
+    df['fecha'] = pd.to_datetime(df['fecha']) 
+
     return df
 
 def analizar_datos(df):
@@ -22,7 +24,7 @@ def analizar_datos(df):
     print(f"b) El producto con mayor facturación total es: {producto_mayor_facturación}")
 
     #facturación total del mes
-    df('mes') = df['fecha'].dt.strftime('%Y-%m')
+    df['mes'] = df['fecha'].dt.strftime('%Y-%m')
     facturacion_por_mes = df.groupby('mes')['total'].sum()
     print("\nc) Facturación total por mes:")
     print(facturacion_por_mes)
