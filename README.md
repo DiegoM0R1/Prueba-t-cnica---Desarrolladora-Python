@@ -1,6 +1,6 @@
 # Ejercicio Práctico: Análisis de Ventas
 
-**Autor:** Diego (Tu Nombre)  
+**Autor:** Diego Mori  
 **Fecha de Entrega:** 01 de octubre de 2025
 
 ## 1. Introducción
